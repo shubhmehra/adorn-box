@@ -1,0 +1,10 @@
+@import url("https://adorn-components.netlify.app/css/style.css");
+
+.main-container-width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ab-navbar-shadow {
+  box-shadow: var(--default-color) 0px 3px 7px -5px;
+}
