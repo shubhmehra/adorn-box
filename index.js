@@ -44,14 +44,14 @@ const addNav = () => {
 addNav();
 
 const addCategoryTile = () => {
-  for (let loopIndex = 0; loopIndex < 5; loopIndex++) {
+  for (let categoryLoopIndex = 0; categoryLoopIndex < 5; categoryLoopIndex++) {
     document.getElementById(
       "product-categories"
     ).innerHTML += `<div class="product-image-container">
       <img
         class="product-image"
         src="https://picsum.photos/300/200/?blur"
-        alt="product-image"
+        alt="product-image-${categoryLoopIndex}"
       />
       <div class="card-overlay-text">Men</div>
     </div>`;
@@ -61,7 +61,11 @@ const addCategoryTile = () => {
 addCategoryTile();
 
 const addCollectionCatalogue = () => {
-  for (let loopIndex = 0; loopIndex < 2; loopIndex++) {
+  for (
+    let collectionLoopIndex = 0;
+    collectionLoopIndex < 2;
+    collectionLoopIndex++
+  ) {
     document.getElementById(
       "collection-catalogue"
     ).innerHTML += `<div class="card card-horizontal e-comm-card">
@@ -69,7 +73,7 @@ const addCollectionCatalogue = () => {
         <img
           class="product-image"
           src="https://picsum.photos/200/240/?blur"
-          alt="product-image"
+          alt="product-image-${collectionLoopIndex}"
         />
         <div class="card-badge">New Arrival</div>
       </div>
