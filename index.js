@@ -42,3 +42,45 @@ const addNav = () => {
 };
 
 addNav();
+
+const addCategoryTile = () => {
+  for (let loopIndex = 0; loopIndex < 5; loopIndex++) {
+    document.getElementById(
+      "product-categories"
+    ).innerHTML += `<div class="product-image-container">
+      <img
+        class="product-image"
+        src="https://picsum.photos/300/200/?blur"
+        alt="product-image"
+      />
+      <div class="card-overlay-text">Men</div>
+    </div>`;
+  }
+};
+
+addCategoryTile();
+
+const addCollectionCatalogue = () => {
+  for (let loopIndex = 0; loopIndex < 2; loopIndex++) {
+    document.getElementById(
+      "collection-catalogue"
+    ).innerHTML += `<div class="card card-horizontal e-comm-card">
+      <div class="product-image-container">
+        <img
+          class="product-image"
+          src="https://picsum.photos/200/240/?blur"
+          alt="product-image"
+        />
+        <div class="card-badge">New Arrival</div>
+      </div>
+      <div class="card-horizontal-body">
+        <div class="card-text">
+          <div class="card-title card-text-gap">Summer Collection</div>
+          Check out our best winter collection to stay warm in style this season
+        </div>
+      </div>
+    </div>`;
+  }
+};
+
+addCollectionCatalogue();
