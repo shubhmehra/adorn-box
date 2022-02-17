@@ -27,14 +27,16 @@ const addNav = () => {
       </li>
       <li class="navbar-list">
         <div class="badge">
-          <img
-            class="avatar avatar-square md"
-            src="/assets/images/cart-outlined.svg"
-            alt="avatar-square-2"
-          />
-          <div class="number-badge">12</div>
+          <a href="/components/cart/cart.html" class="au-text au-text-bold">
+            <img
+              class="avatar avatar-square md"
+              src="/assets/images/cart-outlined.svg"
+              alt="avatar-square-2"
+            />
+            <div class="number-badge">12</div>
+          </a>
         </div>
-        <a href="#" class="au-text au-text-bold">Cart</a>
+        <a href="/components/cart/cart.html" class="au-text au-text-bold">Cart</a>
       </li>
     </ul>
   </div>

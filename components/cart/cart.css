@@ -1,0 +1,19 @@
+.cart-container {
+  margin: 0 auto;
+}
+
+.cart-product {
+  min-width: 32rem;
+  max-width: 40rem;
+}
+
+.cart-detail-container {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+.cart-heading {
+  text-align: center;
+}
