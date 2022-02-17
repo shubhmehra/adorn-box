@@ -60,7 +60,7 @@ const addCategoryTile = () => {
   }
 };
 
-addCategoryTile();
+window.location.pathname.includes("index") && addCategoryTile();
 
 const addCollectionCatalogue = () => {
   for (
@@ -89,4 +89,30 @@ const addCollectionCatalogue = () => {
   }
 };
 
-addCollectionCatalogue();
+window.location.pathname.includes("index") && addCollectionCatalogue();
+
+const addWishListContainer = () => {
+  for (let wishlistLoopIndex = 0; wishlistLoopIndex < 5; wishlistLoopIndex++) {
+    document.getElementById("wishlist-container").innerHTML += `
+      <div class="card card-ecommerce ab-cart-card">
+        <div class="product-image-container">
+          <img
+            class="product-image"
+            src="https://picsum.photos/300/200/?blur"
+            alt="product-image-${wishlistLoopIndex}"
+          />
+        </div>
+        <div class="card-badge-dismiss">X</div>
+        <div class="card-title">Survey Corps Anime Book</div>
+        <div class="card-text ab-text-center ab-cart-price">Rs. 250</div>
+        <button
+          class="button button-outlined-primary button-full-width"
+        >
+          Move to cart
+        </button>
+      </div>
+    `;
+  }
+};
+
+window.location.pathname.includes("wishlist") && addWishListContainer();

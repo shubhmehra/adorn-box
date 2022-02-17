@@ -1,5 +1,6 @@
 @import url("https://adorn-components.netlify.app/css/style.css");
 @import url("/components/cart/cart.css");
+@import url("/components/wishlist/wishlist.css");
 
 .main-container-width {
   max-width: 1200px;
