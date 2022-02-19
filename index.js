@@ -50,12 +50,14 @@ const addCategoryTile = () => {
     document.getElementById(
       "product-categories"
     ).innerHTML += `<div class="product-image-container">
-      <img
-        class="product-image"
-        src="https://picsum.photos/300/200/?blur"
-        alt="product-image-${categoryLoopIndex}"
-      />
-      <div class="card-overlay-text">Men</div>
+      <a href="/components/product-list/product-list.html">
+        <img
+          class="product-image"
+          src="https://picsum.photos/300/200/?blur"
+          alt="product-image-${categoryLoopIndex}"
+        />
+        <div class="card-overlay-text">Men</div>
+      </a>
     </div>`;
   }
 };
