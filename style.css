@@ -1,4 +1,6 @@
 @import url("https://adorn-components.netlify.app/css/style.css");
+@import url("/components/cart/cart.css");
+@import url("/components/wishlist/wishlist.css");
 
 .main-container-width {
   max-width: 1200px;
@@ -42,19 +44,12 @@
   row-gap: 6.4rem;
 }
 
-.product-image {
-  width: 100%;
+.ab-text-md {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 }
 
-.product-image-container {
-  min-width: 20rem;
-  max-width: 24rem;
-}
-
-.e-comm-card {
-  gap: 64px;
-}
-
-.card-text-gap {
-  margin-bottom: 20px;
+.display-flex {
+  display: flex;
 }

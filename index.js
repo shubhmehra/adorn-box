@@ -27,14 +27,16 @@ const addNav = () => {
       </li>
       <li class="navbar-list">
         <div class="badge">
-          <img
-            class="avatar avatar-square md"
-            src="/assets/images/cart-outlined.svg"
-            alt="avatar-square-2"
-          />
-          <div class="number-badge">12</div>
+          <a href="/components/cart/cart.html" class="au-text au-text-bold">
+            <img
+              class="avatar avatar-square md"
+              src="/assets/images/cart-outlined.svg"
+              alt="avatar-square-2"
+            />
+            <div class="number-badge">12</div>
+          </a>
         </div>
-        <a href="#" class="au-text au-text-bold">Cart</a>
+        <a href="/components/cart/cart.html" class="au-text au-text-bold">Cart</a>
       </li>
     </ul>
   </div>
@@ -48,17 +50,19 @@ const addCategoryTile = () => {
     document.getElementById(
       "product-categories"
     ).innerHTML += `<div class="product-image-container">
-      <img
-        class="product-image"
-        src="https://picsum.photos/300/200/?blur"
-        alt="product-image-${categoryLoopIndex}"
-      />
-      <div class="card-overlay-text">Men</div>
+      <a href="/components/product-list/product-list.html">
+        <img
+          class="product-image"
+          src="https://picsum.photos/300/200/?blur"
+          alt="product-image-${categoryLoopIndex}"
+        />
+        <div class="card-overlay-text">Men</div>
+      </a>
     </div>`;
   }
 };
 
-addCategoryTile();
+window.location.pathname.includes("index") && addCategoryTile();
 
 const addCollectionCatalogue = () => {
   for (
@@ -87,4 +91,30 @@ const addCollectionCatalogue = () => {
   }
 };
 
-addCollectionCatalogue();
+window.location.pathname.includes("index") && addCollectionCatalogue();
+
+const addWishListContainer = () => {
+  for (let wishlistLoopIndex = 0; wishlistLoopIndex < 5; wishlistLoopIndex++) {
+    document.getElementById("wishlist-container").innerHTML += `
+      <div class="card card-ecommerce ab-cart-card">
+        <div class="product-image-container">
+          <img
+            class="product-image"
+            src="https://picsum.photos/300/200/?blur"
+            alt="product-image-${wishlistLoopIndex}"
+          />
+        </div>
+        <div class="card-badge-dismiss">X</div>
+        <div class="card-title">Survey Corps Anime Book</div>
+        <div class="card-text ab-text-center ab-cart-price">Rs. 250</div>
+        <button
+          class="button button-outlined-primary button-full-width"
+        >
+          Move to cart
+        </button>
+      </div>
+    `;
+  }
+};
+
+window.location.pathname.includes("wishlist") && addWishListContainer();

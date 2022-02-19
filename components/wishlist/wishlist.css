@@ -1,0 +1,33 @@
+.cart-container {
+  width: 100%;
+}
+
+.ab-wishlist-heading {
+  padding: 4rem 0;
+}
+
+#wishlist-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.ab-cart-card {
+  max-width: 24rem;
+}
+
+.ab-text-center {
+  text-align: center;
+}
+
+.ab-cart-price {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.4em;
+}
+
+.ab-flexbox {
+  width: 100%;
+  margin: 0 auto;
+}
