@@ -70,3 +70,20 @@
   flex-flow: column;
   gap: 24px;
 }
+
+.product-image {
+  width: 100%;
+}
+
+.product-image-container {
+  min-width: 20rem;
+  max-width: 24rem;
+}
+
+.e-comm-card {
+  gap: 64px;
+}
+
+.card-text-gap {
+  margin-bottom: 2rem;
+}

@@ -44,27 +44,10 @@
   row-gap: 6.4rem;
 }
 
-.product-image {
-  width: 100%;
-}
-
-.product-image-container {
-  min-width: 20rem;
-  max-width: 24rem;
-}
-
-.e-comm-card {
-  gap: 64px;
-}
-
-.card-text-gap {
-  margin-bottom: 20px;
-}
-
 .ab-text-md {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 }
 
 .display-flex {
