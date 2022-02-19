@@ -6,5 +6,55 @@
 }
 
 .ab-navbar-shadow {
+  grid-area: header;
   box-shadow: var(--default-color) 0px 3px 7px -5px;
+}
+
+.category-tile {
+  grid-area: category;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.main-banner {
+  grid-area: banner;
+  min-height: 30rem;
+  background-color: var(--off-white);
+}
+
+.collection-banner {
+  grid-area: collection;
+  display: flex;
+  justify-content: space-between;
+  gap: 2.4rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "category"
+    "banner"
+    "collection";
+  gap: 10px;
+  padding: 1rem;
+  row-gap: 6.4rem;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.product-image-container {
+  min-width: 20rem;
+  max-width: 24rem;
+}
+
+.e-comm-card {
+  gap: 64px;
+}
+
+.card-text-gap {
+  margin-bottom: 20px;
 }
