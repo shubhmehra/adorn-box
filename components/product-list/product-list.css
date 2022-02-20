@@ -1,0 +1,30 @@
+.product-wrapper {
+  display: grid;
+  grid-template-columns: 22% 1fr;
+  grid-template-areas: "sidebar products";
+  gap: 1rem;
+  row-gap: 4rem;
+  column-gap: 4rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .product-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "sidebar"
+      "products";
+  }
+}
+
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  gap: 4rem;
+  background-color: var(--active-color);
+  height: 100vh;
+  box-shadow: var(--default-color) 0px 1px 2px 0px;
+}
+
+.products {
+  grid-area: products;
+}
