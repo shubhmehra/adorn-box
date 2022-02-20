@@ -13,16 +13,18 @@ const addNav = () => {
     </div>
     <ul class="navbar-links">
       <li class="navbar-list">
-        <button class="button button-outlined-secondary">Login</button>
+        <button class="button button-outlined-secondary" onclick="location.href = '/components/login/login.html';">Login</button>
       </li>
       <li class="navbar-list">
         <div class="badge">
-          <img
-            class="avatar avatar-square md"
-            src="/assets/images/heartIcon.svg"
-            alt="avatar-square-2"
-          />
-          <div class="number-badge">12</div>
+          <a href="/components/wishlist/wishlist.html" class="au-text au-text-bold">
+            <img
+              class="avatar avatar-square md"
+              src="/assets/images/heartIcon.svg"
+              alt="avatar-square-2"
+            />
+            <div class="number-badge">12</div>
+          </a>
         </div>
       </li>
       <li class="navbar-list">

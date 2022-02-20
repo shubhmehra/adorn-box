@@ -16,15 +16,40 @@
   }
 }
 
-.sidebar {
+.ab-sidebar {
   grid-area: sidebar;
-  display: flex;
   gap: 4rem;
   background-color: var(--active-color);
-  height: 100vh;
+  min-height: 100vh;
   box-shadow: var(--default-color) 0px 1px 2px 0px;
+  padding: 4rem;
 }
 
-.products {
+.ab-products {
   grid-area: products;
+  padding: 4rem;
+  gap: 4rem;
+}
+
+.ab-price-range-filter {
+  display: flex;
+  gap: 20px;
+}
+
+.ab-filter-header {
+  justify-content: space-between;
+}
+
+.ab-price-range {
+  width: 100%;
+}
+
+.ab-price-container {
+  justify-content: space-between;
+}
+
+.ab-product-list {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
 }

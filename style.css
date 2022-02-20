@@ -2,6 +2,7 @@
 @import url("/components/cart/cart.css");
 @import url("/components/wishlist/wishlist.css");
 @import url("/components/product-list/product-list.css");
+@import url("/components/login/login.css");
 
 .main-container-width {
   max-width: 1200px;
@@ -51,6 +52,22 @@
   line-height: 2.4rem;
 }
 
-.display-flex {
+.ab-display-flex {
   display: flex;
+}
+
+.ab-flex-flow-column {
+  flex-flow: column;
+}
+
+.ab-font-bold {
+  font-weight: bold;
+}
+
+.ab-gap-20 {
+  gap: 2rem;
+}
+
+.ab-align-center {
+  align-items: center;
 }
