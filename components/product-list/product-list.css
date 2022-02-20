@@ -33,7 +33,7 @@
 
 .ab-price-range-filter {
   display: flex;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .ab-filter-header {
