@@ -8,7 +8,7 @@
 
 #wishlist-container {
   display: flex;
-  gap: 20px;
+  gap: 2px;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }

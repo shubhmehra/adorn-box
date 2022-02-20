@@ -11,9 +11,224 @@
   <body>
     <div class="main-container">
       <main class="home-container">
-        <div class="wrapper">
-          <div id="main-navbar" class="ab-navbar-shadow"></div>
-          <div class="cart-container"></div>
+        <div id="main-navbar" class="ab-navbar-shadow"></div>
+        <div class="product-wrapper">
+          <div class="ab-sidebar ab-display-flex ab-flex-flow-column">
+            <div class="ab-filter-header ab-display-flex">
+              <p class="ab-text-md ab-font-bold">Filter</p>
+              <p><u class="au-text">Clear</u></p>
+            </div>
+            <div class="ab-price-range-filter ab-flex-flow-column">
+              <p class="ab-text-md ab-font-bold">Price</p>
+              <div class="ab-price-section">
+                <div class="ab-display-flex ab-price-container">
+                  <span class="ab-text-md">Rs. 5</span>
+                  <span class="ab-text-md">Rs. 5000</span>
+                </div>
+                <input
+                  class="ab-price-range"
+                  type="range"
+                  name="range"
+                  id="range"
+                  min="5"
+                  max="5000"
+                />
+              </div>
+            </div>
+            <div
+              class="ab-category-filter ab-flex-flow-column ab-display-flex ab-gap-20"
+            >
+              <p class="ab-text-md ab-font-bold">Category</p>
+              <div class="ab-category-list">
+                <div class="ab-category">
+                  <div
+                    class="ab-category-list ab-display-flex ab-gap-20 ab-align-center"
+                  >
+                    <input type="checkbox" />
+                    <label class="au-text">Men Clothing</label>
+                  </div>
+                  <div
+                    class="ab-category-list ab-display-flex ab-gap-20 ab-align-center"
+                  >
+                    <input type="checkbox" />
+                    <label class="au-text">Men Clothing</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="ab-category-filter ab-flex-flow-column ab-display-flex ab-gap-20"
+            >
+              <p class="ab-text-md ab-font-bold">Rating</p>
+              <div class="ab-category-list">
+                <div class="ab-category">
+                  <div
+                    class="ab-category-list ab-display-flex ab-gap-20 ab-align-center"
+                  >
+                    <input type="radio" />
+                    <label class="au-text">4 Star & above</label>
+                  </div>
+                  <div
+                    class="ab-category-list ab-display-flex ab-gap-20 ab-align-center"
+                  >
+                    <input type="radio" />
+                    <label class="au-text">3 Star & above</label>
+                  </div>
+                  <div
+                    class="ab-category-list ab-display-flex ab-gap-20 ab-align-center"
+                  >
+                    <input type="radio" />
+                    <label class="au-text">2 Star & above</label>
+                  </div>
+                  <div
+                    class="ab-category-list ab-display-flex ab-gap-20 ab-align-center"
+                  >
+                    <input type="radio" />
+                    <label class="au-text">2 Star & above</label>
+                  </div>
+                  <div
+                    class="ab-category-list ab-display-flex ab-gap-20 ab-align-center"
+                  >
+                    <input type="radio" />
+                    <label class="au-text">1 Star & above</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="ab-category-filter ab-flex-flow-column ab-display-flex ab-gap-20"
+            >
+              <p class="ab-text-md ab-font-bold">Sort by</p>
+              <div class="ab-category-list">
+                <div class="ab-category">
+                  <div
+                    class="ab-category-list ab-display-flex ab-gap-20 ab-align-center"
+                  >
+                    <input type="radio" />
+                    <label class="au-text">Price - Low to High</label>
+                  </div>
+                  <div
+                    class="ab-category-list ab-display-flex ab-gap-20 ab-align-center"
+                  >
+                    <input type="radio" />
+                    <label class="au-text">Price - High to Low</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ab-products ab-display-flex ab-flex-flow-column">
+            <div class="ab-filter-header ab-display-flex">
+              <p class="ab-text-md ab-font-bold">
+                Showing All Products
+                <span>( Showing 20 products )</span>
+              </p>
+            </div>
+            <div class="ab-product-list">
+              <div class="card card-ecommerce">
+                <div class="product-image-container">
+                  <img
+                    class="product-image"
+                    src="https://picsum.photos/300/200/?blur"
+                    alt="product-image"
+                  />
+                </div>
+                <div class="card-badge-dismiss">X</div>
+                <div class="card-title">Survey Corps Anime Book</div>
+                <div class="card-text">Rs. 250</div>
+                <button
+                  class="button button-outlined-primary button-full-width"
+                >
+                  CHECKOUT
+                </button>
+              </div>
+              <div class="card card-ecommerce">
+                <div class="product-image-container">
+                  <img
+                    class="product-image"
+                    src="https://picsum.photos/300/200/?blur"
+                    alt="product-image"
+                  />
+                </div>
+                <div class="card-badge-dismiss">X</div>
+                <div class="card-title">Survey Corps Anime Book</div>
+                <div class="card-text">Rs. 250</div>
+                <button
+                  class="button button-outlined-primary button-full-width"
+                >
+                  CHECKOUT
+                </button>
+              </div>
+              <div class="card card-ecommerce">
+                <div class="product-image-container">
+                  <img
+                    class="product-image"
+                    src="https://picsum.photos/300/200/?blur"
+                    alt="product-image"
+                  />
+                </div>
+                <div class="card-badge-dismiss">X</div>
+                <div class="card-title">Survey Corps Anime Book</div>
+                <div class="card-text">Rs. 250</div>
+                <button
+                  class="button button-outlined-primary button-full-width"
+                >
+                  CHECKOUT
+                </button>
+              </div>
+              <div class="card card-ecommerce">
+                <div class="product-image-container">
+                  <img
+                    class="product-image"
+                    src="https://picsum.photos/300/200/?blur"
+                    alt="product-image"
+                  />
+                </div>
+                <div class="card-badge-dismiss">X</div>
+                <div class="card-title">Survey Corps Anime Book</div>
+                <div class="card-text">Rs. 250</div>
+                <button
+                  class="button button-outlined-primary button-full-width"
+                >
+                  CHECKOUT
+                </button>
+              </div>
+              <div class="card card-ecommerce">
+                <div class="product-image-container">
+                  <img
+                    class="product-image"
+                    src="https://picsum.photos/300/200/?blur"
+                    alt="product-image"
+                  />
+                </div>
+                <div class="card-badge-dismiss">X</div>
+                <div class="card-title">Survey Corps Anime Book</div>
+                <div class="card-text">Rs. 250</div>
+                <button
+                  class="button button-outlined-primary button-full-width"
+                >
+                  CHECKOUT
+                </button>
+              </div>
+              <div class="card card-ecommerce">
+                <div class="product-image-container">
+                  <img
+                    class="product-image"
+                    src="https://picsum.photos/300/200/?blur"
+                    alt="product-image"
+                  />
+                </div>
+                <div class="card-badge-dismiss">X</div>
+                <div class="card-title">Survey Corps Anime Book</div>
+                <div class="card-text">Rs. 250</div>
+                <button
+                  class="button button-outlined-primary button-full-width"
+                >
+                  CHECKOUT
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </div>
