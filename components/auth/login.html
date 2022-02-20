@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>AdornBox</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <main class="home-container">
+        <div id="main-navbar" class="ab-navbar-shadow"></div>
+        <div class="ab-auth-wrapper">
+          <div class="card ab-auth-card">
+            <div class="card-title">Login</div>
+            <div
+              class="card-text ab-auth-card-body ab-display-flex ab-flex-flow-column"
+            >
+              <div class="input-group">
+                <label>Username/Email *</label>
+                <input
+                  type="email"
+                  class="au-input"
+                  placeholder="email@adornbox.com"
+                />
+              </div>
+              <div class="input-group error">
+                <label>Password *</label>
+                <input
+                  type="password"
+                  class="au-input"
+                  placeholder="your password"
+                />
+                <span class="au-input-error-text">Password is incorrect</span>
+              </div>
+              <div class="ab-display-flex ab-justify-space-between">
+                <div class="ab-display-flex ab-gap-20 ab-align-center">
+                  <input type="checkbox" />
+                  <label class="au-text">Remember me</label>
+                </div>
+                <span class="au-text au-primary-text"
+                  >Forgot your password?</span
+                >
+              </div>
+              <div class="ab-card-footer ab-display-flex">
+                <button
+                  class="button button-contained-primary button-full-width"
+                >
+                  LOGIN
+                </button>
+                <a
+                  href="/components/auth/signup.html"
+                  class="ab-text-md ab-text-center"
+                  >Create New Account</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="/index.js"></script>
+  </body>
+</html>

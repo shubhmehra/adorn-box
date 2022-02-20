@@ -2,7 +2,7 @@
 @import url("/components/cart/cart.css");
 @import url("/components/wishlist/wishlist.css");
 @import url("/components/product-list/product-list.css");
-@import url("/components/login/login.css");
+@import url("/components/auth/auth.css");
 
 .main-container-width {
   max-width: 1200px;
@@ -70,4 +70,12 @@
 
 .ab-align-center {
   align-items: center;
+}
+
+.ab-justify-space-between {
+  justify-content: space-between;
+}
+
+.ab-text-center {
+  text-align: center;
 }

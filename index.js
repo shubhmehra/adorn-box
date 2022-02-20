@@ -13,7 +13,7 @@ const addNav = () => {
     </div>
     <ul class="navbar-links">
       <li class="navbar-list">
-        <button class="button button-outlined-secondary" onclick="location.href = '/components/login/login.html';">Login</button>
+        <button class="button button-outlined-secondary" onclick="location.href = '/components/auth/login.html';">Login</button>
       </li>
       <li class="navbar-list">
         <div class="badge">
