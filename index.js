@@ -3,7 +3,7 @@ const addNav = () => {
     "main-navbar"
   ).innerHTML += `<nav class="navbar main-container-width">
   <div class="navbar-container">
-    <a href="/index.html" class="navbar-title">Adorn Box</a>
+    <a href="/" class="navbar-title">Adorn Box</a>
     <div class="input-group">
       <input
         type="text"
@@ -64,7 +64,7 @@ const addCategoryTile = () => {
   }
 };
 
-window.location.pathname.includes("index") && addCategoryTile();
+window.location.pathname === "/" && addCategoryTile();
 
 const addCollectionCatalogue = () => {
   for (
@@ -93,7 +93,7 @@ const addCollectionCatalogue = () => {
   }
 };
 
-window.location.pathname.includes("index") && addCollectionCatalogue();
+window.location.pathname === "/" && addCollectionCatalogue();
 
 const addWishListContainer = () => {
   for (let wishlistLoopIndex = 0; wishlistLoopIndex < 5; wishlistLoopIndex++) {
