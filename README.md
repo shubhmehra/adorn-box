@@ -32,7 +32,7 @@ git clone https://github.com/shubhmehra/adorn-box.git
 
 ## Live Links
 
-Adorn UI is live & deployed on netlify,
+Adorn Box is live & deployed on netlify,
 
 
 > Live link: https://adornbox.netlify.app/
