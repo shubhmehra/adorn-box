@@ -1,0 +1,23 @@
+.ab-auth-wrapper {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.ab-auth-card {
+  min-width: 50rem;
+  padding: 4rem;
+  gap: 3rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .ab-auth-card {
+    min-width: 30rem;
+    padding: 4rem;
+  }
+}
+
+.ab-auth-card-body {
+  gap: 3rem;
+}
